@@ -1,12 +1,15 @@
 import java.io.*;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import javax.swing.*;
 public class Merge {
 	public static void main(String[] args) throws FileNotFoundException {
 		int item1 = 0, item2 = 0;
 		String fileName1, fileName2, outFileName;
 		File dataFile1, dataFile2, outFile;
 		boolean hasNext1 = false, hasNext2 = false;
+		JFrame myframe = new JFrame(); // the line that creates trouble
+		//repaint();
 		Scanner keyScanner = new Scanner(System.in);
 		System.out.println("Please enter the first file name: ");
 		fileName1 = keyScanner.nextLine();
