@@ -8,7 +8,8 @@ public class Merge {
 		String fileName1, fileName2, outFileName;
 		File dataFile1, dataFile2, outFile;
 		boolean hasNext1 = false, hasNext2 = false;
-		JFrame myframe = new JFrame(); // the line that creates trouble
+		JFrame myframe = new JFrame(); // the lines that creates trouble
+		myframe.setVisible(true); // goes with line above
 		//repaint();
 		Scanner keyScanner = new Scanner(System.in);
 		System.out.println("Please enter the first file name: ");
