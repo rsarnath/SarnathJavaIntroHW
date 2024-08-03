@@ -1,6 +1,7 @@
 import java.io.*;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.awt.*;
 import javax.swing.*;
 public class Merge {
 	public static void main(String[] args) throws FileNotFoundException {
@@ -9,6 +10,11 @@ public class Merge {
 		File dataFile1, dataFile2, outFile;
 		boolean hasNext1 = false, hasNext2 = false;
 		JFrame myframe = new JFrame(); // the lines that creates trouble
+		myframe.setSize(300, 300);
+		JPanel buttonPanel = new JPanel();
+        Container contentpane = myframe.getContentPane();
+        contentpane.add(buttonPanel, "North");
+        buttonPanel.add(new JButton("mybutton"));
 		myframe.setVisible(true); // goes with line above
 		//repaint();
 		Scanner keyScanner = new Scanner(System.in);
