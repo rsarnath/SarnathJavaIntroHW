@@ -9,14 +9,16 @@ public class Merge {
 		String fileName1, fileName2, outFileName;
 		File dataFile1, dataFile2, outFile;
 		boolean hasNext1 = false, hasNext2 = false;
+		System.out.println("Jframe not created");
 		JFrame myframe = new JFrame(); // the lines that creates trouble
 		myframe.setSize(300, 300);
+		System.out.println("Jframe created");
 		JPanel buttonPanel = new JPanel();
         Container contentpane = myframe.getContentPane();
         contentpane.add(buttonPanel, "North");
         buttonPanel.add(new JButton("mybutton"));
 		myframe.setVisible(true); // goes with line above
-		//repaint();
+		myframe.repaint();
 		Scanner keyScanner = new Scanner(System.in);
 		System.out.println("Please enter the first file name: ");
 		fileName1 = keyScanner.nextLine();
